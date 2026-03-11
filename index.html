@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisha SDG 14 Web Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="intro">
+        <h1>SDG 14 Web App Simulator</h1>
+        <p>
+          A web remake of the original MIT App Inventor project, running inside an
+          iPhone 16 style front-screen mockup.
+        </p>
+        <button id="runDemo" class="secondary">Run Simulator Tour</button>
+      </section>
+
+      <section class="phone-shell" aria-label="iPhone 16 mockup">
+        <div class="notch" aria-hidden="true"></div>
+        <div class="phone-screen" id="phoneScreen">
+          <article class="app-screen active" id="screen1" aria-label="Screen 1">
+            <div class="grid two-col logos">
+              <img src="assets/Goal_14.png" alt="UN Goal 14" />
+              <img src="assets/logo.png" alt="App logo" />
+            </div>
+
+            <h2>UN Goal 14 - Life Below Water</h2>
+
+            <button data-speak="about">
+              About life below water
+            </button>
+
+            <div class="grid two-col cards">
+              <img src="assets/14.jpg" alt="Goal 14 visual" />
+              <img src="assets/WATER.avif" alt="Water theme" />
+              <img src="assets/turtle.jpg" alt="Sea turtle" />
+              <button data-speak="targets" class="tall">Key Targets</button>
+            </div>
+
+            <button data-nav="screen2" class="primary">Next</button>
+          </article>
+
+          <article class="app-screen" id="screen2" aria-label="Screen 2">
+            <div class="grid two-col logos">
+              <img src="assets/Goal_14.png" alt="UN Goal 14" />
+              <img src="assets/logo.png" alt="App logo" />
+            </div>
+
+            <h2>Causes and How to Help</h2>
+
+            <img src="assets/ocean.jpg" alt="Ocean" class="hero" />
+
+            <button data-speak="causes">Causes of harm to life below water</button>
+            <button data-speak="help">What to do to help?</button>
+
+            <footer>
+              <span>App created by - Prisha</span>
+              <button data-nav="screen1" class="primary">Back</button>
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
